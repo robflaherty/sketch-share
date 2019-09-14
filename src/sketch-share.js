@@ -1,18 +1,18 @@
 import sketch from 'sketch'
 import fs from '@skpm/fs'
+import os from '@skpm/os'
 
 export default function() {
 
   var document = sketch.getSelectedDocument()
   var page = document.selectedPage;
 
-  var exportPath = '/Users/robflaherty/Documents/Sketch Exports/' + page.name + '/'
-  var resourcesPath = '/Users/robflaherty/Code/sketch-share/sketch-share.sketchplugin/Contents/Resources/'
+  var exportPath = os.homedir() + '/Documents/Sketch Exports/' + page.name + '/'
+  var template = context.plugin.urlForResourceNamed('html.html').path()
   var indexFile = exportPath + 'index.html'
 
   var tempHTML = '';
 
-  var data = {};
   var artboards = []
 
   var pasteboard = NSPasteboard.generalPasteboard();
@@ -47,7 +47,7 @@ export default function() {
 
   });
 
-  var html = fs.readFileSync(resourcesPath + 'html.html', {encoding: 'utf-8'})
+  var html = fs.readFileSync(template, {encoding: 'utf-8'})
 
   html = '<html>\n<head>\n<title>' + page.name +'</title>\n' + html;
   html += '<h1>' + page.name + '</h1>\n<ul>\n';
