@@ -3,15 +3,15 @@
   "icon": "icon.png",
   "commands": [
     {
-      "name": "my-command",
-      "identifier": "sketch-share.my-command-identifier",
-      "script": "./my-command.js"
+      "name": "Sketch Share",
+      "identifier": "sketch-share.sketch-share-identifier",
+      "script": "./sketch-share.js"
     }
   ],
   "menu": {
-    "title": "sketch-share",
+    "title": "Sketch Share",
     "items": [
-      "sketch-share.my-command-identifier"
+      "sketch-share.sketch-share-identifier"
     ]
   }
 }
