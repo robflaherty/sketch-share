@@ -5,6 +5,7 @@
     {
       "name": "Sketch Share",
       "identifier": "sketch-share.sketch-share-identifier",
+      "shortcut": "ctrl shift e",
       "script": "./sketch-share.js"
     }
   ],
