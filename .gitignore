@@ -1,5 +1,5 @@
 # build artifacts
-sketch-share.sketchplugin
+sketch-share.sketchplugin*
 
 # npm
 node_modules

@@ -74,6 +74,6 @@ export default function() {
 
   // Copy file path to clipboard
   pasteboard.clearContents()
-  pasteboard.writeObjects([indexFile])
+  pasteboard.writeObjects(['file://' + indexFile])
 
 }
