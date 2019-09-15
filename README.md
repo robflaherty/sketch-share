@@ -3,6 +3,8 @@ This plugin exports all of the artboards on the current page and generates a loc
 
 This is a beta plugin still under testing. Bug reports welcome.
 
+![Demo](demo.gif)
+
 ## How to install
 - [Download the latest release](../../releases/latest/download/sketch-share.sketchplugin.zip) of the plugin
 - Un-zip and double-click on sketch-share.sketchplugin
