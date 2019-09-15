@@ -1,7 +1,7 @@
 {
   "name": "sketch-share",
-  "description": "",
-  "version": "0.1.0",
+  "description": "Sketch plugin that exports artboards and generates an HTML file linking to each one",
+  "version": "0.1",
   "engines": {
     "sketch": ">=49.0"
   },
@@ -27,5 +27,9 @@
   "dependencies": {
     "@skpm/fs": "^0.2.5",
     "@skpm/os": "^0.1.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/robflaherty/sketch-share.git"
   }
 }
