@@ -23,7 +23,7 @@
   "devDependencies": {
     "@skpm/builder": "^0.7.0"
   },
-  "author": "Rob Flaherty <rob.flaherty@gmail.com>",
+  "author": "Rob Flaherty <rob@parsnip.io>",
   "dependencies": {
     "@skpm/fs": "^0.2.5",
     "@skpm/os": "^0.1.1"
