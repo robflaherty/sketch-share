@@ -76,4 +76,8 @@ export default function() {
   pasteboard.clearContents()
   pasteboard.writeObjects(['file://' + indexFile])
 
+  // Open index file in browser
+  var fileURL = NSURL.fileURLWithPath(indexFile)
+  NSWorkspace.sharedWorkspace().openFile(fileURL.path())
+
 }
