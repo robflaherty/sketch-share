@@ -1,6 +1,7 @@
 import sketch from 'sketch'
 import fs from '@skpm/fs'
 import os from '@skpm/os'
+import dialog from '@skpm/dialog'
 
 export default function() {
 
@@ -15,6 +16,21 @@ export default function() {
   var tempHTML = ''
   var artboards = []
   var intro = false
+
+  // Let user choose export directory
+  var selected = dialog.showOpenDialogSync({
+    title: 'Choose Export Directory',
+    properties: ['openDirectory'],
+    buttonLabel: 'Export Here',
+    defaultPath: os.homedir() + '/Documents/Sketch Exports'
+  });
+
+  // End early if they click cancel
+  if (!selected.length) {
+    return
+  } else {
+    exportPath = selected + '/' + page.name + '/'
+  }
 
   // Get artboards
   page.layers.forEach(layer => {

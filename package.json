@@ -25,6 +25,7 @@
   },
   "author": "Rob Flaherty <rob@parsnip.io>",
   "dependencies": {
+    "@skpm/dialog": "^0.3.0",
     "@skpm/fs": "^0.2.5",
     "@skpm/os": "^0.1.1"
   },
