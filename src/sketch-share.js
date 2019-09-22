@@ -10,9 +10,9 @@ export default function() {
 
   var exportPath = os.homedir() + '/Documents/Sketch Exports/' + page.name + '/'
   var template = context.plugin.urlForResourceNamed('html.html').path()
-  var indexFile = exportPath + 'index.html'
   var pasteboard = NSPasteboard.generalPasteboard()
 
+  var indexFile
   var tempHTML = ''
   var artboards = []
   var intro = false
@@ -30,6 +30,7 @@ export default function() {
     return
   } else {
     exportPath = selected + '/' + page.name + '/'
+    indexFile = exportPath + 'index.html'
   }
 
   // Get artboards
