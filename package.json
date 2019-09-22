@@ -1,7 +1,7 @@
 {
   "name": "sketch-share",
   "description": "Sketch plugin that exports artboards and generates an HTML file linking to each one",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "engines": {
     "sketch": ">=49.0"
   },
