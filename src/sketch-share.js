@@ -21,8 +21,7 @@ export default function() {
   var selected = dialog.showOpenDialogSync({
     title: 'Choose Export Directory',
     properties: ['openDirectory'],
-    buttonLabel: 'Export Here',
-    defaultPath: os.homedir() + '/Documents/Sketch Exports'
+    buttonLabel: 'Export Here'
   });
 
   // End early if they click cancel
